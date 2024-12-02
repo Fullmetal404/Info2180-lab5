@@ -21,7 +21,7 @@ if ($lookup === 'cities') {
 
     // Output cities in a table
     echo "<table border='1'>";
-    echo "<tr><th>City</th><th>District</th><th>Population</th></tr>";
+    echo "<tr><th>Name</th><th>District</th><th>Population</th></tr>";
     foreach ($results as $row) {
         echo "<tr>";
         echo "<td>{$row['city']}</td>";
@@ -42,7 +42,7 @@ if ($lookup === 'cities') {
 
     // Output countries in a table
     echo "<table border='1'>";
-    echo "<tr><th>Country</th><th>Continent</th><th>Independence Year</th><th>Head of State</th></tr>";
+    echo "<tr><th>Name</th><th>Continent</th><th>Independence Year</th><th>Head of State</th></tr>";
     foreach ($results as $row) {
         echo "<tr>";
         echo "<td>{$row['name']}</td>";
