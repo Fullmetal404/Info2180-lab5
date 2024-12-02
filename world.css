@@ -1,24 +1,26 @@
 /* Add your own styles */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(247, 250, 252);
     color: rgb(74, 85, 104);
 }
 
-/* Header Styling */
 header {
     background-color: rgb(74, 85, 104);
     padding: 20px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 header h1 {
     color: white;
-    font-size: 3em;
+    font-size: 5em;
 }
 
 main {
@@ -30,6 +32,7 @@ main {
     text-align: center;
 }
 
+/* Country name input field*/
 #controls #country {
     width: 50%;
     padding: 10px;
@@ -37,10 +40,11 @@ main {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#controls #lookup {
+/* Lookup Conutry button*/
+#controls #lookup-Country {
     font-size: 1rem;
     padding: 10px 20px;
     margin: 5px;
@@ -51,6 +55,49 @@ main {
     cursor: pointer;
 }
 
+/* Lookup Cities button*/
+#controls #lookup-City {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(66, 153, 225);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Results Container */
 #result {
-    font-size: 1em;
+    margin-top: 20px;
+    text-align: left;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    font-weight: bold;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(247, 250, 252);
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
 }
